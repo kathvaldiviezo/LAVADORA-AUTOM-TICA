@@ -1,0 +1,16 @@
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity controlador is
+Port(
+		Resetn, clock: in std_logic;
+		Encender, Start, Remojar, Jeans, Toall, Norm, Del: in std_logic;
+		Fin3s, llenando, finllenado, finlavado, FinRemojo: in std_logic;
+		Vacio, FinDesague, FinExprimido1, FinEnjuague1: in std_logic;
+		FinExprimido2, Finllenado2, FinEnjuage2, FinDesague2: in std_logic;
+		FinExprimidoF, FinAlarma: in std_logic;
+		ldtempo, EnR, Encendido, SelRemojo, EnR, EnProgram: out std_logic;
+		Error, contar, EnP, valvula, MoverMot, Bomba: out std_logic;
+		Centrifugar: out std_logic;
+		est: out std_logic_vector());
+	
